@@ -11,7 +11,7 @@ import { Header,
   Testomonial,
   Token } from "../components/index"
 
-import { CONTEXT} from "../context/context";
+import { CONTEXT } from "../context/context";
 
 
 

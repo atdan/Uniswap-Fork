@@ -235,6 +235,8 @@ export const PROVIDER = ({children}) => {
 
     return (
         <CONTEXT.Provider value={{TOKEN_SWAP, LOAD_TOKEN, notifyError, notifySuccess,
-            setLoader, loader, connect, address, swap}}></CONTEXT.Provider>
+            setLoader, loader, connect, address, swap}}>
+            {children}{""}
+        </CONTEXT.Provider>
     )
 }
