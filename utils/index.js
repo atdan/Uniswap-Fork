@@ -1,4 +1,5 @@
 export const shortenAddress = (address) => {
+    address = address.toString()
     return `${address?.slice(0,6)}...${address?.slice(address.length - 4)}`
 }
 

@@ -48,6 +48,7 @@ const index = () => {
             setToken_1={setToken_1}
             setToken_2={setToken_2}
             swap={swap}
+            setOpenToken={setOpenToken}
         />
         <Feature />
         <Platfrom />

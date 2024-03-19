@@ -41,7 +41,7 @@ export const PROVIDER = ({children}) => {
         try {
             if(!window.ethereum) return notifyError("Install Metamask")
 
-            const accounts = await window.ethereum.req({
+            const accounts = await window.ethereum.request({
                 method: "eth_requestAccounts"
             })
 
@@ -55,6 +55,8 @@ export const PROVIDER = ({children}) => {
             const network = await provider.getNetwork();
             setChainId(network.chainId);
         }catch (e) {
+            console.log("Catch Error...")
+            console.log(JSON.stringify(e))
             const errorMsg = parseErrorMessage(e);
             notifyError(errorMsg)
             console.log(e);
