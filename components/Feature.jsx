@@ -6,7 +6,7 @@ const Feature = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-12 text-center wow fadeInUp"
-                 data-wow-duration="0.5s" data-wow-delay="0.3s">
+                 data-wow-duration="0.3s" data-wow-delay="0.3s">
               <div className="section-head">
                 <h4 className="lasthead">How does it Work</h4>
                 <h2 className="title">It's really easy</h2>
